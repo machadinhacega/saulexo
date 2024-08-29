@@ -1,0 +1,163 @@
+/* style.css */
+
+body {
+  background-color: #0f172a;
+  font-family: Nunito, sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.date {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.date span {
+  font-weight: 800;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e293b;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 20px 22px 20px;
+  /* Aumentando o padding no eixo y */
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s;
+  font-family: Nunito, sans-serif;
+}
+
+.card.selected {
+  background-color: #009afe;
+}
+
+.card.correct-group-1 {
+  background-color: #c2410c;
+}
+
+.card.correct-group-2 {
+  background-color: #047857;
+}
+
+.card.correct-group-3 {
+  background-color: #0e7490;
+}
+
+.card.correct-group-4 {
+  background-color: #6d28d9;
+}
+
+.card.wrong {
+  background-color: #1e293b;
+  border: 2px solid #b91c1c;
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+
+#resposta {
+  text-align: center;
+  color: #ffffff;
+  transition: transform 0.3s;
+  font-family: Nunito, sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.resposta-group-1 {
+  background-color: #c2410c;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-block: 30px
+}
+
+.resposta-group-2 {
+  background-color: #047857;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-block: 30px
+}
+
+.resposta-group-3 {
+  background-color: #0e7490;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-block: 30px
+}
+
+.resposta-group-4 {
+  background-color: #6d28d9;
+  padding: 15px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-block: 30px
+}
+
+.sub {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+
+#contagem {
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 30%;
+  /* margin-inline: 200px; */
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .card-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+  }
+
+  .card {
+    font-size: 11px;
+    /* ou ajuste conforme necessário */
+    padding: 5px;
+    padding-block: 20px;
+  }
+
+  .container {
+    width: 90%;
+
+  }
+}
